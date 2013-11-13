@@ -14,7 +14,7 @@
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  	<title><%= content_for?(:title) ? yield(:title) : "MotoDynasty" %></title>
 
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
@@ -22,8 +22,65 @@
   </head>
 
   <body>
+    <div class="row">
+      <div class="large-11-centered columns">
+        <nav class="top-bar">
+          <ul class="title-area">
+            <!-- Title Area -->
+            <li class="name">
+              <h1><a href="#">MotoDynasty</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
 
-    <%= yield %>
+          <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li><a href="">Vurbmoto</a></li>
+              </li>
+              <li class="divider"></li>
+              <li class="has-form">
+                <form>
+                  <div class="row collapse">
+                    <div class="small-8 columns">
+                      <input type="text">
+                    </div>
+                    <div class="small-4 columns">
+                      <a href="#" class="alert button">Search</a>
+                    </div>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12-centered columns">
+        <div class="button-bar">
+          <ul class="button-group radius">
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            <li><a href="#" class="small button alert">Button 1</a></li>
+            
+          </ul>
+        </div>
+         <%= yield %>
+      </div>
+    </div>
+   
 
     
     <%= javascript_include_tag "application" %>
